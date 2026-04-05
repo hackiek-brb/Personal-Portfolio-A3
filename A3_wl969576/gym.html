@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Progress - Brian Bui</title>
+    <link rel="icon" type="image/png" href="images/logow.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="notification-banner" role="alert" aria-live="polite">
+    <span id="notification-msg"></span>
+    <button onclick="dismissNotification()" title="Close notification" aria-label="Close notification">&#10005;</button>
+</div>
+
+<button id="back-to-top" title="Back to top" aria-label="Scroll back to top">&#8593;</button>
+
+<nav id="topnav" aria-label="Main navigation">
+    <button id="sidebar-toggle" onclick="toggleSidebar()" title="Toggle navigation" aria-label="Toggle sidebar navigation">&#9776;</button>
+    <a id="topnav-brand" href="index.html">
+        <img src="images/logow.png" alt="BrB Logo">
+        <span>Brian Bui</span>
+    </a>
+    <div id="topnav-links">
+        <a href="index.html"><strong>About me</strong></a>
+        <span class="sep">|</span>
+        <a href="education.html"><strong>Education</strong></a>
+        <span class="sep">|</span>
+        <a href="gym.html"><strong>Gym Progress</strong></a>
+        <button class="theme-btn active" data-theme="dark"  onclick="setTheme('dark')">Dark</button>
+        <button class="theme-btn"        data-theme="light" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn"        data-theme="ocean" onclick="setTheme('ocean')">Ocean</button>
+    </div>
+</nav>
+
+<div id="page-body">
+
+    <aside id="sidebar" aria-label="Sidebar navigation">
+        <div class="sidebar-inner">
+            <a href="index.html" class="sidebar-logo-wrap">
+                <img src="images/logow.png" alt="Logo">
+            </a>
+            <p class="sidebar-name">Made by Brian Bui</p>
+            <p class="sidebar-id">Student ID: B01043369</p>
+
+            <nav class="sidebar-nav" aria-label="Page links">
+                <ol>
+                    <li><a href="index.html">About me</a></li>
+                    <li>
+                        <a href="education.html">Education</a>
+                        <ul>
+                            <li>Secondary</li>
+                            <li>Post-secondary</li>
+                        </ul>
+                    </li>
+                    <li><a href="gym.html">Gym Progress</a></li>
+                </ol>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html"><strong><em>Back to Home Page</em></strong></a>
+                <p class="sidebar-copyright">Copyright &copy; 2025 Brian Bui.</p>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-content">
+
+        <hr>
+        <br>
+
+        <section aria-label="Gym progress introduction">
+            <div class="content-row">
+                <div class="content-col" style="text-align:right;">
+                    <h1 class="section-heading">Gym Progress</h1>
+                    <hr>
+                    <br>
+                    <p class="section-text">
+                        I didn't start this journey perfect &mdash; I started it because I wanted to become
+                        better. Every rep, every early morning, every day I showed up even when I didn't
+                        feel like it&hellip; that's what built my progress. This isn't just about the gym &mdash;
+                        it's about proving to myself that consistency can reshape your body, your mindset,
+                        and your life. If I can do it step by step, you can too.
+                    </p>
+                </div>
+                <div class="content-col img-col">
+                    <img src="images/gym/gym1.JPG" alt="Brian and friend at the gym at midnight" title="Me and my bro at 12am" class="styled-img" width="400" height="450">
+                    <span class="caption">Me and my bro at 12am</span>
+                </div>
+            </div>
+        </section>
+
+        <hr style="width:60%; margin:0 auto;">
+        <br>
+
+        <section aria-label="Day 1 progress">
+            <div class="content-row reverse">
+                <div class="content-col">
+                    <h1 class="section-heading">Day 1</h1>
+                    <hr>
+                    <br>
+                    <p class="section-text">
+                        As you can see, this was my starting point &mdash; not perfect, not confident,
+                        just determined to change. I didn't know much, but I knew I wanted better
+                        for myself. Day by day, rep by rep, I built discipline, strength, and a version
+                        of me I'm proud of. Everyone starts somewhere&hellip; this was mine.
+                    </p>
+                </div>
+                <div class="content-col img-col">
+                    <img src="images/gym/gym2.jpg" alt="Brian on Day 1 of gym journey" title="Never give up" class="styled-img" width="600" height="350">
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <div style="text-align:center;">
+            <iframe width="800" height="440"
+                src="https://www.youtube.com/embed/Jaep7tUCJ1Q"
+                title="YouTube workout motivation video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="max-width:100%;">
+            </iframe>
+            <span class="caption">One of my favourite guys for motivation and guides.</span>
+        </div>
+
+        <br>
+
+        <section aria-label="Day 500 progress">
+            <div class="content-row">
+                <div class="content-col" style="text-align:right;">
+                    <h1 class="section-heading">Day 500</h1>
+                    <hr>
+                    <br>
+                    <p class="section-text">
+                        500 days later&hellip; this isn't just a different body &mdash; it's a different mindset.
+                        I stayed when it was hard, pushed when I felt tired, and kept going when no one
+                        was watching. This is what discipline looks like when you choose it every single day.
+                    </p>
+                </div>
+                <div class="content-col img-col">
+                    <img src="images/gym/gym3.JPG" alt="Brian after 500 days of training" title="Finally" class="styled-img" width="400" height="530">
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <div style="text-align:center;">
+            <video width="760" height="428" controls style="max-width:100%;" aria-label="Bench press personal record video">
+                <source src="video/pr.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <span class="caption">My personal record for bench press &mdash; 205 lbs.</span>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <h2 style="text-align:center;">Social Media</h2>
+        <br>
+        <div class="social-row">
+            <a href="https://www.instagram.com/khoabr_b/">
+                <img src="images/index/sclogo1.png" alt="Instagram" title="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-bui-026517316/">
+                <img src="images/index/sclogo2.png" alt="LinkedIn" title="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/bui.uc.anh.khoa.2025">
+                <img src="images/index/sclogo3.png" alt="Facebook" title="Facebook">
+            </a>
+        </div>
+
+        <div class="page-footer">
+            <a href="index.html" class="footer-back"><strong><em>Back to Home Page</em></strong></a>
+            <p class="footer-copy">Copyright &copy; 2025 Brian Bui.</p>
+        </div>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Bui's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/logow.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="notification-banner" role="alert" aria-live="polite">
+    <span id="notification-msg"></span>
+    <button onclick="dismissNotification()" title="Close notification" aria-label="Close notification">&#10005;</button>
+</div>
+
+<button id="back-to-top" title="Back to top" aria-label="Scroll back to top">&#8593;</button>
+
+<nav id="topnav" aria-label="Main navigation">
+    <button id="sidebar-toggle" onclick="toggleSidebar()" title="Toggle navigation" aria-label="Toggle sidebar navigation">&#9776;</button>
+
+    <a id="topnav-brand" href="index.html">
+        <img src="images/logow.png" alt="BrB Logo">
+        <span>Brian Bui</span>
+    </a>
+
+    <div id="topnav-links">
+        <a href="index.html"><strong>About me</strong></a>
+        <span class="sep">|</span>
+        <a href="education.html"><strong>Education</strong></a>
+        <span class="sep">|</span>
+        <a href="gym.html"><strong>Gym Progress</strong></a>
+        <button class="theme-btn active" data-theme="dark"  onclick="setTheme('dark')">Dark</button>
+        <button class="theme-btn"        data-theme="light" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn"        data-theme="ocean" onclick="setTheme('ocean')">Ocean</button>
+    </div>
+</nav>
+
+<div id="page-body">
+
+    <aside id="sidebar" aria-label="Sidebar navigation">
+        <div class="sidebar-inner">
+            <a href="index.html" class="sidebar-logo-wrap">
+                <img src="images/logow.png" alt="Logo">
+            </a>
+            <p class="sidebar-name">Made by Brian Bui</p>
+            <p class="sidebar-id">Student ID: B01043369</p>
+
+            <nav class="sidebar-nav" aria-label="Page links">
+                <ol>
+                    <li><a href="index.html">About me</a></li>
+                    <li>
+                        <a href="education.html">Education</a>
+                        <ul>
+                            <li>Secondary</li>
+                            <li>Post-secondary</li>
+                        </ul>
+                    </li>
+                    <li><a href="gym.html">Gym Progress</a></li>
+                </ol>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html"><strong><em>Back to Home Page</em></strong></a>
+                <p class="sidebar-copyright">Copyright &copy; 2025 Brian Bui.</p>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-content">
+
+        <section id="hero" aria-label="Hero banner">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="video/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay">
+                <h1 class="hero-title">Brian Bui</h1>
+                <p class="hero-subtitle">Computer Science Student &bull; Developer &bull; Fitness Enthusiast</p>
+                <a href="#about-section" class="hero-cta">Learn More</a>
+            </div>
+        </section>
+
+        <div id="greeting-section">
+            <label for="name-input" class="sr-only">Enter your name</label>
+            <input type="text" id="name-input" placeholder="Enter your name..." oninput="updateGreeting()">
+            <p id="greeting-text" aria-live="polite"></p>
+        </div>
+
+        <hr>
+        <br>
+
+
+        <section id="about-section" aria-label="About me">
+            <div class="content-row">
+                <div class="content-col img-col">
+                    <a href="https://www.instagram.com/p/DMCERQgtLO3/?img_index=1" title="Instagram Graduation Post">
+                        <img src="images/index/index1.jpeg" alt="Brian Bui graduation photo" class="styled-img" width="600" height="700">
+                    </a>
+                    <span class="caption">
+                        <a href="https://www.instagram.com/p/DMCERQgtLO3/?img_index=1"><strong><em>Instagram post</em></strong></a>
+                    </span>
+                </div>
+                <div class="content-col">
+                    <h2 class="section-heading">About me</h2>
+                    <hr>
+                    <br>
+                    <p class="section-text">
+                        I graduated from <strong>Woodlawn High School</strong> and am now a
+                        <strong>first-year Bachelor of Computer Science student</strong> at
+                        Dalhousie University. I'm passionate about technology, problem-solving,
+                        and building my skills as I begin my journey in computer science.
+                        This website is where I share my projects, progress, things I'm learning
+                        along the way, and also fun things in my life.
+                    </p>
+                    <br><br>
+                    <p class="music-label">Do you want some music?</p>
+                    <audio controls aria-label="Background music player">
+                        <source src="music/music.m4a" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <section id="social-life-section" aria-label="Social life">
+            <div class="content-row reverse">
+                <div class="content-col img-col">
+                    <img src="images/index/index2.jpeg" alt="Brian Bui portrait photo" class="styled-img" width="440" height="500">
+                </div>
+                <div class="content-col" style="text-align:right;">
+                    <h2 class="section-heading">Social Life</h2>
+                    <hr>
+                    <br>
+                    <p class="section-text">
+                        I'm a first-year Bachelor of Computer Science student at Dalhousie University,
+                        building my skills and exploring the world of technology. Outside the classroom,
+                        I stay inspired through a mix of creative and active hobbies.
+                    </p>
+                    <br>
+                    <p class="section-text">My interests include:</p>
+                    <div style="display:flex; justify-content:flex-end;">
+                        <ul class="interest-list" style="text-align:left; padding-left:22px;">
+                            <li>Photography</li>
+                            <li>Gym</li>
+                            <li>Cooking</li>
+                            <li>Playing Video Games</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div style="text-align:center !important; width:100%;">
+                        <p class="section-text">I'm also a part of these societies:</p>
+                        <div class="society-row" style="justify-content:center;">
+                            <a href="https://www.instagram.com/dalhackerssociety/" title="Dalhousie Hackers Society">
+                                <img src="images/index/slogo1.jpg" alt="Dal Hackers Society Logo" width="140" height="140">
+                            </a>
+                            <a href="https://www.linkedin.com/company/aws-cloud-club-dal" title="AWS Cloud Club at Dalhousie University">
+                                <img src="images/index/slogo2.png" alt="AWS Cloud Club Logo" width="170" height="110">
+                            </a>
+                            <a href="https://www.instagram.com/dallangexchange/" title="Dalhousie Language Exchange Society">
+                                <img src="images/index/slogo3.jpg" alt="Dalhousie Language Exchange Society Logo" width="140" height="140">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <section id="contact-section" aria-label="Contact form">
+            <h2 class="section-heading" style="text-align:center;">Get in Touch</h2>
+            <p class="section-text" style="text-align:center; margin-bottom:24px;">
+                Have a question or want to connect? Fill out the form below!
+            </p>
+            <form id="contact-form" class="contact-form" onsubmit="return handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2 style="text-align:center;">Social Media</h2>
+        <br>
+        <div class="social-row">
+            <a href="https://www.instagram.com/khoabr_b/">
+                <img src="images/index/sclogo1.png" alt="Instagram" title="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-bui-026517316/">
+                <img src="images/index/sclogo2.png" alt="LinkedIn" title="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/bui.uc.anh.khoa.2025">
+                <img src="images/index/sclogo3.png" alt="Facebook" title="Facebook">
+            </a>
+        </div>
+
+        <div class="page-footer">
+            <a href="index.html" class="footer-back"><strong><em>Back to Home Page</em></strong></a>
+            <p class="footer-copy">Copyright &copy; 2025 Brian Bui.</p>
+        </div>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

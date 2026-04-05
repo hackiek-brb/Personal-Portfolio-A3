@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Brian Bui</title>
+    <link rel="icon" type="image/png" href="images/logow.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="notification-banner" role="alert" aria-live="polite">
+    <span id="notification-msg"></span>
+    <button onclick="dismissNotification()" title="Close notification" aria-label="Close notification">&#10005;</button>
+</div>
+
+<button id="back-to-top" title="Back to top" aria-label="Scroll back to top">&#8593;</button>
+
+<nav id="topnav" aria-label="Main navigation">
+    <button id="sidebar-toggle" onclick="toggleSidebar()" title="Toggle navigation" aria-label="Toggle sidebar navigation">&#9776;</button>
+    <a id="topnav-brand" href="index.html">
+        <img src="images/logow.png" alt="BrB Logo">
+        <span>Brian Bui</span>
+    </a>
+    <div id="topnav-links">
+        <a href="index.html"><strong>About me</strong></a>
+        <span class="sep">|</span>
+        <a href="education.html"><strong>Education</strong></a>
+        <span class="sep">|</span>
+        <a href="gym.html"><strong>Gym Progress</strong></a>
+        <button class="theme-btn active" data-theme="dark"  onclick="setTheme('dark')">Dark</button>
+        <button class="theme-btn"        data-theme="light" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn"        data-theme="ocean" onclick="setTheme('ocean')">Ocean</button>
+    </div>
+</nav>
+
+<div id="page-body">
+
+    <aside id="sidebar" aria-label="Sidebar navigation">
+        <div class="sidebar-inner">
+            <a href="index.html" class="sidebar-logo-wrap">
+                <img src="images/logow.png" alt="Logo">
+            </a>
+            <p class="sidebar-name">Made by Brian Bui</p>
+            <p class="sidebar-id">Student ID: B01043369</p>
+
+            <nav class="sidebar-nav" aria-label="Page links">
+                <ol>
+                    <li><a href="index.html">About me</a></li>
+                    <li>
+                        <a href="education.html">Education</a>
+                        <ul>
+                            <li>Secondary</li>
+                            <li>Post-secondary</li>
+                        </ul>
+                    </li>
+                    <li><a href="gym.html">Gym Progress</a></li>
+                </ol>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html"><strong><em>Back to Home Page</em></strong></a>
+                <p class="sidebar-copyright">Copyright &copy; 2025 Brian Bui.</p>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-content">
+
+        <hr>
+        <br>
+
+        <section aria-label="Secondary education">
+            <div style="text-align:center;">
+                <h1 class="section-heading">Secondary</h1>
+                <br>
+                <a href="https://wdn.hrce.ca/" title="Woodlawn High School">
+                    <img src="images/education/woodlawn.jpg" alt="Woodlawn High School building" class="styled-img" width="480" height="310">
+                </a>
+                <h2 style="margin-top:10px;">(Woodlawn High School)</h2>
+            </div>
+            <br>
+
+            <div class="photo-gallery" aria-label="High school photo gallery">
+                <figure class="gallery-item">
+                    <img src="images/education/highschool1.jpg" alt="Last day at Woodlawn High School">
+                    <figcaption>Last day at Woodlawn High School</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/education/highschool2.jpg" alt="Teacher-Student day at Woodlawn">
+                    <figcaption>Teacher-Student day</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/education/highschool3.jpeg" alt="My favourite friend and teacher">
+                    <figcaption>My favourite friend and teacher</figcaption>
+                </figure>
+            </div>
+
+            <p class="section-text" style="max-width:720px; margin:0 auto; text-align:center;">
+                I finished my secondary education at Woodlawn High School, where I first got into logic,
+                tech, and problem-solving through the classes I enjoyed most. My time there was full of
+                good memories, supportive teachers, and friends who helped shape who I am today.
+                It's a big part of what pushed me toward studying computer science and building the path
+                I'm on now.
+            </p>
+        </section>
+
+        <br>
+        <hr style="width:60%; margin:0 auto;">
+        <br>
+
+        <section aria-label="Post-secondary education">
+            <div style="text-align:center;">
+                <h1 class="section-heading">Post-Secondary</h1>
+                <br>
+                <a href="https://www.dal.ca/" title="Dalhousie University">
+                    <img src="images/education/dalhousie.jpeg" alt="Dalhousie University campus" class="styled-img" width="480" height="310">
+                </a>
+                <h2 style="margin-top:10px;">(Dalhousie University)</h2>
+            </div>
+            <br>
+
+            <!-- Photo Gallery using CSS Grid -->
+            <div class="photo-gallery" aria-label="University photo gallery">
+                <figure class="gallery-item">
+                    <img src="images/education/uni1.PNG" alt="Brian at Job Fair day">
+                    <figcaption>Job Fair day</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/education/uni2.jpg" alt="Codechella week event">
+                    <figcaption>Codechella week</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/education/uni3.jpg" alt="Dalhousie CS building">
+                    <figcaption>CS building</figcaption>
+                </figure>
+            </div>
+
+            <p class="section-text" style="max-width:720px; margin:0 auto; text-align:center;">
+                I'm currently studying Computer Science at Dalhousie University, where I'm diving deeper
+                into programming, problem-solving, and the tech world in general. Being here has pushed
+                me to grow, try new things, and explore what I really enjoy in this field. It's been a
+                great start to my university journey, and I'm excited to keep building my skills and
+                experiences along the way.
+            </p>
+
+            <br>
+            <p style="text-align:center;">
+                <strong><em>Currently pursuing a Bachelor of Computer Science. Here are some of my current courses:</em></strong>
+            </p>
+            <br>
+
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Focus Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSCI 1110</td>
+                        <td>Intro to Computer Science</td>
+                        <td>Java Programming &amp; Software Dev</td>
+                    </tr>
+                    <tr>
+                        <td>CSCI 1170</td>
+                        <td>Intro to Web Design &amp; Devel.</td>
+                        <td>HTML, CSS &amp; UI/UX Design</td>
+                    </tr>
+                    <tr>
+                        <td>CSCI 1315</td>
+                        <td>Discrete Math for CS</td>
+                        <td>Logic, Set Theory &amp; Algorithms</td>
+                    </tr>
+                    <tr>
+                        <td>CSCI 1108</td>
+                        <td>Experimental Robotics</td>
+                        <td>Hardware Integration &amp; Robotics</td>
+                    </tr>
+                    <tr>
+                        <td>ASSC 1800</td>
+                        <td>Computing and Society in Hist</td>
+                        <td>Evolution of Technology &amp; Society</td>
+                    </tr>
+                    <tr>
+                        <td>ASSC 1801</td>
+                        <td>Case Studies in Computing</td>
+                        <td>Ethics &amp; Professional Standards</td>
+                    </tr>
+                    <tr>
+                        <td>MATH 1000</td>
+                        <td>Differential &amp; Integral Calc I</td>
+                        <td>Calculus &amp; Mathematical Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>CSCI 1105</td>
+                        <td>Intro to Computer Programming</td>
+                        <td>Foundational Problem Solving</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+        <h2 style="text-align:center;">Social Media</h2>
+        <br>
+        <div class="social-row">
+            <a href="https://www.instagram.com/khoabr_b/">
+                <img src="images/index/sclogo1.png" alt="Instagram" title="Instagram" width="400" height="200">
+            </a>
+            <a href="https://www.linkedin.com/in/brian-bui-026517316/">
+                <img src="images/index/sclogo2.png" alt="LinkedIn" title="LinkedIn" width="200" height="200">
+            </a>
+            <a href="https://www.facebook.com/bui.uc.anh.khoa.2025">
+                <img src="images/index/sclogo3.png" alt="Facebook" title="Facebook" width="200" height="200">
+            </a>
+        </div>
+
+        <div class="page-footer">
+            <a href="index.html" class="footer-back"><strong><em>Back to Home Page</em></strong></a>
+            <p class="footer-copy">Copyright &copy; 2025 Brian Bui.</p>
+        </div>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
